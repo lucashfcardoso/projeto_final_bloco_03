@@ -1,4 +1,4 @@
-import { ShoppingCart, User } from "@phosphor-icons/react"
+import { Link, ShoppingCart, User } from "@phosphor-icons/react"
 
 function Navbar () {
     return (
@@ -12,8 +12,12 @@ function Navbar () {
                 <div className="text-2xl font-bold uppercase">Farmácia Saúde e Bem Estar</div>
 
                 <div className="flex gap-4">
-                    <div className="hover:underline">Categorias</div>
-                    <div className="hover:underline">Cadastrar categoria</div>
+                <div className="hover:underline">Categorias</div>
+                <div className="hover:underline">Cadastrar categoria</div>
+               <Link to='/categorias' className='hover:underline'>Categorias</Link>
+                <Link to='/cadastrarcategoria' className='hover:underline'>Cadastrar categoria</Link>
+               
+                
                     <div className="hover:underline"><User size={32} /></div>
                     <div className="hover:underline"><ShoppingCart size={32} /></div>
                 </div>
